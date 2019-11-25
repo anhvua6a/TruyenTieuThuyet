@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
+    <ImageView
+        android:layout_marginTop="100dp"
+        android:src="@drawable/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+
+    <EditText
+
+        android:paddingLeft="80dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/user"
+        android:id="@+id/edtTaiKhoan"
+        android:hint="Tên Đăng Nhập"
+        android:inputType="textPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        app:hintEnabled="false">
+        <EditText
+            android:layout_marginBottom="20dp"
+            android:paddingRight="15dp"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="80dp"
+            android:background="@drawable/pass"
+            android:inputType="textPassword"
+            android:id="@+id/edtMatKhau"
+            android:hint="Mật Khẩu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+        <CheckBox
+            android:id="@+id/chkCheck"
+            android:layout_marginLeft="60dp"
+            android:textColor="@color/Cam"
+            android:text="Remember me ?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:textSize="25dp"
+
+            android:layout_gravity="center"
+            android:onClick="Login"
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Đăng Nhập" />
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.truyen.ChiTietTruyenActivity"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgAvt"
+            android:layout_width="196dp"
+            android:layout_height="271dp"
+            android:src="@drawable/ngontinh" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/Cam"
+                android:layout_marginTop="40dp"
+                android:id="@+id/tvTenTruyen"
+                android:textSize="20dp"
+                android:text="Hôn Nhân Danh Nghĩa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/tacgia"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"/>
+                <TextView
+                    android:textColor="@color/Xanh"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvTGTruyen"
+                    android:textSize="20dp"
+                    android:text="Khinh Mạc Tâm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/theloai"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"/>
+                <TextView
+                    android:textColor="@color/Xanh"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvTLTruyen"
+                    android:textSize="20dp"
+                    android:text="Ngôn Tình"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="110dp"
+                android:onClick="Add"
+                android:src="@drawable/favorite"
+                android:layout_width="60dp"
+                android:layout_height="60dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:textColor="@color/Xanh"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:layout_marginTop="10dp"
+        android:text="Danh Sách Chương"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <ListView
+            android:id="@+id/lvListChuong"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+       <com.google.android.material.floatingactionbutton.FloatingActionButton
+           android:id="@+id/fabAddChuong"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentRight="true"
+           android:layout_margin="@dimen/fab_margin"/>
+    </RelativeLayout>
+
+</LinearLayout>
